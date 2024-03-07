@@ -1,0 +1,57 @@
+#root,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.app {
+    height: 100%;
+    background: url('./images/background.jpg');
+    display: flex;
+    background-size: 100% 99.99%;
+    background-position: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    width: 55%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 2px;
+    box-shadow: 10px 10px 10px 10px;
+    background: transparent;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    height: 580px;
+
+}
+
+.btn {
+    height: 180px;
+    width: 180px;
+    font-size: 19px;
+    position: relative;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 1;
+    color: black;
+    font-weight: bold;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
