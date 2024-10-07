@@ -14,13 +14,12 @@ class App extends React.Component {
         axios.get('https://api.adviceslip.com/advice')
             .then((response) => {
                 const { advice } = response.data.slip;
-
                 this.setState({ advice: advice });
+
             })
             .catch((error) => {
                 console.log(error);
             });
-
     }
 
     render() {
@@ -37,4 +36,5 @@ class App extends React.Component {
         );
     }
 }
+
 export default App;

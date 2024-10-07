@@ -10,48 +10,76 @@ body {
 
 .app {
     height: 100%;
-    background: url('./images/background.jpg');
+    background: url('./images/background.jpg') no-repeat;
+    background-size: cover;
+    /* Ensures the background image covers the entire container */
     display: flex;
-    background-size: 100% 99.99%;
-    background-position: center;
     justify-content: center;
-    background-repeat: no-repeat;
     align-items: center;
     text-align: center;
 }
 
 .card {
-    width: 55%;
-    height: 35%;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-radius: 25px;
-    padding: 2px;
-    box-shadow: 10px 10px 10px 10px;
-    background: transparent;
+    padding: 20px;
+    box-shadow: 10px 8px 20px rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.112);
+    /* Slightly more opaque background */
+    backdrop-filter: blur(10px);
+    /* Adds a blur effect to the background behind the card */
 }
 
 .heading {
-    display: flex;
-    align-items: center;
-    height: 580px;
-
+    font-size: 1.5rem;
+    /* Adjust font size for better readability */
+    line-height: 1.4;
+    /* Adjust line height */
+    margin-bottom: 20px;
+    /* Add space below the heading */
+    word-wrap: break-word;
+    /* Allow long words to break and prevent overflow */
 }
 
 .btn {
-    height: 180px;
-    width: 180px;
-    font-size: 19px;
-    position: relative;
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
     border-radius: 50px;
-    justify-content: center;
-    align-items: center;
     cursor: pointer;
-    opacity: 1;
-    color: black;
+    color: white;
     font-weight: bold;
-    background: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.6);
+    background: #474747b5;
+    border: solid 2px;
+    border-color: black;
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Initial shadow */
+    outline: none;
+    /* Remove default outline */
+}
+
+/* Hover effect */
+.btn:hover {
+    background: #1a1a1ae4;
+    /* Change background color on hover */
+    transform: translateY(-5px);
+    /* Lift the button slightly */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    /* Add a deeper shadow on hover */
+}
+
+/* Active (click) effect */
+.btn:active {
+    transform: translateY(2px);
+    /* Slightly depress the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Reduce shadow when clicked */
 }
