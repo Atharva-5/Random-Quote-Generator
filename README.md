@@ -8,7 +8,7 @@ Random Quote Generator is a React-based web application that fetches and display
 - [API](#api)
 - [Preview](#preview)
 - [Getting Started](#getting-started)
-- [Demo](#demo)
+- [Demo](https://stalwart-dusk-375687.netlify.app/)
 - [Contributing](#contributing)
 
 ## Features
